@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!-- ce DOCTYPE est n�cessaire avec IE pour les marges automatiques -->
+<html>
+<!-- en-tete technique-->
+<head>
+<title>Quelques balises de formulaire</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Exemple de formulaire">
+<meta name="keywords" lang="fr" content="html,formulaire,boutons">
+<meta name="Author" content="Gr�goire Mar�chal">
+
+ <link href="style_formulaire.css" type="text/css" rel="stylesheet" media="all">
+</head>
+
+<body> 
+<!-- Debut du formulaire -->
+<form name="formulaire1" action="mailto:moi@quelque.part" method="post" enctype="text/plain">
+
+
+<form>
+	<fieldset>
+		<legend>Renseignez les information suivantes : </legend>
+		<label>Code Postal : </label> <input name="codepostal" type="int" size="7"/>
+		<br>
+	</fieldset>
+	<fieldset>
+		<legend>Repondez a ce questionnaire</legend>
+		<h4>Cocher les chaines que vous regardez !</h4>
+			<label>TF1</label>
+			  <input name="chainetv" type="checkbox" checked="checked" value="choix1" id="1" />
+			  <label>France 2</label>
+			  <input name="chainetv" type="checkbox"  checked="checked" value="choix2" id="2" />
+			  <label>France 3</label>
+			  <input name="chainetv" type="checkbox" checked="checked" value="choix3" id="3" />
+			  <label>Canal +</label>
+			  <input name="chainetv" type="checkbox"  checked="checked" value="choix4" id="4" />
+			  <label>France 4</label>
+			  <input name="chainetv" type="checkbox"  checked="checked" value="choix5" id="5" />
+	</fieldset>
+
+	<fieldset>
+		<legend>De quel pays venez-vous</legend>
+		<input name="langue" type="radio" value="Francais" />Francais<br>
+		<input name="langue" type="radio" value="Anglais" />Anglais<br>
+		<input name="langue" type="radio" value="Allemand" />Allemand<br>
+		<input name="langue" type="radio" value="Italien" />Italien<br>
+	</fieldset>
+
+	<fieldset>
+		<legend>Quel est votre taille ? </legend>
+		<select name="jour">
+			<option  value="facultatif">(facultatif)</option>
+			<option  value="petit">petit</option>
+			<option  value="moyen">moyen</option>
+			<option  value="grand">grand</option>
+		</select>
+	</fieldset>
+
+	<fieldset>
+		<legend>Envoyez vos reponse</legend>
+		<input type="submit" value="Valider" />
+		<input type="image" src="loupe.png" alt="Loupe" />
+		
+	</fieldset>
+
+
+</form>
+
+
+
+
+ </body>
+</html>
