@@ -1,0 +1,99 @@
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Choix d'une police simple et moderne */
+    background-color: #f4f4f9; /* Fond gris clair pour un effet propre et aéré */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texte en gris foncé pour une bonne lisibilité */
+}
+
+/* Mise en forme des titres */
+h1 {
+    font-size: 2rem; /* Taille de police plus grande pour les titres principaux */
+    color: #2c3e50; /* Couleur sombre et professionnelle pour les titres */
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase; /* Pour un aspect plus formel */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e; /* Un peu plus clair que les h1 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les images */
+img {
+    display: block;
+    margin: 0 auto 20px; /* Centrer l'image et ajouter un espace sous l'image */
+    border-radius: 8px; /* Arrondir légèrement les bords de l'image */
+}
+
+/* Liste principale */
+ul {
+    list-style-type: none; /* Supprimer les puces des listes */
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul ul {
+    margin-left: 20px; /* Indenter les sous-listes */
+}
+
+/* Mise en forme des éléments de la liste */
+ul li {
+    font-size: 1rem;
+    color: #555; /* Gris moyen pour les éléments de liste */
+    margin-bottom: 5px;
+}
+
+/* Mise en forme des liens (si tu en ajoutes plus tard) */
+a {
+    text-decoration: none;
+    color: #3498db; /* Bleu clair pour les liens */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajout d'un peu de mise en forme pour les sections importantes */
+strong {
+    color: #e74c3c; /* Couleur rouge pour les éléments importants */
+}
+
+/* Mise en forme des sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour les sections */
+    border-radius: 10px; /* Bords arrondis pour une meilleure présentation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+}
+
+/* Section spécifique pour les titres de chaque catégorie */
+section h1, section h2 {
+    margin-top: 0;
+}
+
+/* Espacement général entre les sections */
+section + section {
+    margin-top: 30px;
+}
+
+/* Responsivité : ajuster les tailles sur les petits écrans */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Réduire la taille du texte sur petits écrans */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Réduire la taille des titres h1 */
+    }
+    
+    h2 {
+        font-size: 1.25rem; /* Réduire la taille des titres h2 */
+    }
+}
+
