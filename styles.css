@@ -1,94 +1,83 @@
-/* === Styles généraux === */
-body {
-    font-family: Arial, sans-serif; /* Police simple et lisible */
-    background-color: #f4f4f9; /* Fond gris clair */
+/* Reset de base */
+* {
     margin: 0;
     padding: 0;
-    color: #333; /* Texte gris foncé */
+    box-sizing: border-box;
 }
 
-/* === Mise en forme des titres principaux === */
-h1 {
-    font-size: 2rem; /* Taille de police des titres principaux */
-    color: #2c3e50; /* Couleur sombre */
-    text-align: center; /* Centrer les titres */
-    margin-top: 20px; /* Espacement au-dessus */
-    text-transform: uppercase; /* Mettre en majuscules */
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* === Mise en forme des sous-titres === */
-h2 {
-    font-size: 1.5rem; /* Taille plus petite pour h2 */
-    color: #34495e; /* Couleur plus claire */
-    margin-top: 20px;
-    margin-bottom: 10px;
+/* En-tête */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* === Style des images === */
-img {
-    display: block;
-    margin: 0 auto 20px; /* Centrer l'image et ajouter un espace sous */
-    border-radius: 8px; /* Coins arrondis pour l'image */
+/* Navigation */
+nav {
+    margin: 20px 0;
 }
 
-/* === Mise en forme des listes === */
-ul {
-    list-style-type: none; /* Enlever les puces */
-    padding: 0;
-    margin: 10px 0;
+nav ul {
+    list-style: none;
 }
 
-ul ul {
-    margin-left: 20px; /* Indentation des sous-listes */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* === Style des éléments de liste === */
-ul li {
-    font-size: 1rem; /* Taille de texte des éléments */
-    color: #555; /* Couleur gris clair pour les éléments de liste */
-    margin-bottom: 5px; /* Espacement entre les éléments */
-}
-
-/* === Mise en forme des liens === */
-a {
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #3498db; /* Bleu clair pour les liens */
+    font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline; /* Souligner au survol */
+/* Section principale */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* === Mise en forme des sections === */
-section {
-    margin: 20px; /* Espacement autour de la section */
-    padding: 20px; /* Padding interne de la section */
-    background-color: #ffffff; /* Fond blanc pour les sections */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+/* Titres */
+h1, h2, h3 {
+    color: #007BFF;
 }
 
-/* === Espacement entre les titres de chaque section === */
-section h1, section h2 {
-    margin-top: 0;
+/* Boutons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-/* === Espacement entre les sections === */
-section + section {
-    margin-top: 30px; /* Ajouter de l'espace entre les sections */
+.button:hover {
+    background: #0056b3;
 }
 
-/* === Responsivité pour petits écrans === */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* Réduire la taille du texte */
-    }
-    
-    h1 {
-        font-size: 1.5rem; /* Réduire la taille des titres h1 */
-    }
-    
-    h2 {
-        font-size: 1.25rem; /* Réduire la taille des titres h2 */
-    }
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
